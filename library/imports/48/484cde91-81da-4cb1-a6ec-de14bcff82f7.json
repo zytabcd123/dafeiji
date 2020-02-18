@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "历史得分(按钮)",
+    "texture": "0c9040e9-d07c-4433-b99c-aa45a0cd414a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      832,
+      180
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      832,
+      180
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

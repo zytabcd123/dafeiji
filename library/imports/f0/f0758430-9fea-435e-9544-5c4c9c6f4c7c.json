@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "光线（暗）",
+    "texture": "2f576581-206e-4968-8bb1-1a9d8040a81e",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1029,
+      3
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1029,
+      3
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

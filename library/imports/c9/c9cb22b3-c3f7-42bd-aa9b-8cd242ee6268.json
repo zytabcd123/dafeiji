@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "重新挑战",
+    "texture": "f92bb697-628a-4e4a-abb5-6e363e45e62e",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      832,
+      180
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      832,
+      180
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "小飞机（白）",
+    "texture": "bfbe4e6e-b43d-461c-8465-00dc56537092",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      234,
+      173
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      234,
+      173
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

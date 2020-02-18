@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "子弹（1发）",
+    "texture": "e60bfd59-85a2-443c-b195-f7c255813eee",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      33,
+      114
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      33,
+      114
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

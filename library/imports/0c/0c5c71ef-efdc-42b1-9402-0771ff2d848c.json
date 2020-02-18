@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "子弹（2发）",
+    "texture": "6e116a0e-912a-43b7-a276-015ee6347c82",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      71,
+      116
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      71,
+      116
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

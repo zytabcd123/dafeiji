@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "击败敌机",
+    "texture": "adceb157-b646-4571-8192-888bc3d45fd0",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      490,
+      108
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      490,
+      108
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

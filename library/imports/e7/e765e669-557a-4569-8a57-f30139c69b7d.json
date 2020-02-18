@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "历史得分",
+    "texture": "f16e3406-5f65-4ce6-b8b1-1eb700176d83",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      473,
+      111
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      473,
+      111
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

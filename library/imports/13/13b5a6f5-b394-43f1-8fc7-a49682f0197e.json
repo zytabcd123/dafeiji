@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "飞机大战",
+    "texture": "29fa7797-39a1-411f-98cb-8763fabdc429",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1017,
+      518
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1017,
+      518
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "大飞机",
+    "texture": "616ca4c9-636b-4002-ad87-2d02daac6388",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      903,
+      609
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      903,
+      609
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
