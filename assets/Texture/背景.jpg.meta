@@ -7,7 +7,16 @@
   "premultiplyAlpha": false,
   "genMipmaps": false,
   "packable": true,
-  "platformSettings": {},
+  "platformSettings": {
+    "wechatgame": {
+      "formats": [
+        {
+          "name": "jpg",
+          "quality": 80
+        }
+      ]
+    }
+  },
   "subMetas": {
     "背景": {
       "ver": "1.0.4",

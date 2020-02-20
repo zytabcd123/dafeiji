@@ -7,7 +7,16 @@
   "premultiplyAlpha": false,
   "genMipmaps": false,
   "packable": true,
-  "platformSettings": {},
+  "platformSettings": {
+    "wechatgame": {
+      "formats": [
+        {
+          "name": "pvrtc_4bits_rgb_a",
+          "quality": "fast"
+        }
+      ]
+    }
+  },
   "subMetas": {
     "切换子弹按钮2": {
       "ver": "1.0.4",

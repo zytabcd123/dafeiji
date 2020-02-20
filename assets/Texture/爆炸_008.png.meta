@@ -7,7 +7,16 @@
   "premultiplyAlpha": false,
   "genMipmaps": false,
   "packable": true,
-  "platformSettings": {},
+  "platformSettings": {
+    "wechatgame": {
+      "formats": [
+        {
+          "name": "pvrtc_4bits_rgb_a",
+          "quality": "fast"
+        }
+      ]
+    }
+  },
   "subMetas": {
     "爆炸_008": {
       "ver": "1.0.4",

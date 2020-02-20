@@ -80,8 +80,8 @@
     "relativePath": "Texture"
   },
   "b3af2f7d-60f4-4421-8911-ca5dcd802b3d": {
-    "asset": 1582179742272,
-    "meta": 1582179742287,
+    "asset": 1582183133268,
+    "meta": 1582183133278,
     "relativePath": "Scene/gameScene.fire"
   },
   "87c1bf27-8e79-449d-8670-ad39a98113ab": {
@@ -151,12 +151,12 @@
   },
   "5b277719-2143-4aa0-8ae8-f0668dfc622b": {
     "asset": 1581647872442,
-    "meta": 1581647872535,
+    "meta": 1582182464316,
     "relativePath": "Texture/爆炸（白）.png"
   },
   "adceb157-b646-4571-8192-888bc3d45fd0": {
     "asset": 1581647872444,
-    "meta": 1581647872550,
+    "meta": 1582182360921,
     "relativePath": "Texture/击败敌机.png"
   },
   "e60bfd59-85a2-443c-b195-f7c255813eee": {
@@ -241,17 +241,17 @@
   },
   "205c5bb5-8fba-44bd-a125-cfdf393fa4dd": {
     "asset": 1582101804964,
-    "meta": 1582101854504,
+    "meta": 1582182378129,
     "relativePath": "Texture/切换子弹按钮1.jpg"
   },
   "20c2045e-40c2-4d93-9b42-c7374cf9d7c6": {
     "asset": 1582101815853,
-    "meta": 1582101857228,
+    "meta": 1582182390759,
     "relativePath": "Texture/切换子弹按钮2.jpg"
   },
   "306b195b-a83b-45e7-b5e3-a88af59ab373": {
     "asset": 1582101825469,
-    "meta": 1582167685302,
+    "meta": 1582182398611,
     "relativePath": "Texture/切换子弹按钮3.jpg"
   },
   "4fe8e1ac-ec93-4a01-8bec-91f90db795a7": {
@@ -281,47 +281,47 @@
   },
   "5e562224-c609-4d09-955b-f506c50c631d": {
     "asset": 1582170804007,
-    "meta": 1582170804042,
+    "meta": 1582182505648,
     "relativePath": "Texture/爆炸_006.png"
   },
   "d910257b-ca4d-4bf8-8a24-763075af8972": {
     "asset": 1582170804007,
-    "meta": 1582170804046,
+    "meta": 1582182513640,
     "relativePath": "Texture/爆炸_007.png"
   },
   "acfe99e1-1877-4d16-afc4-cf091c464e40": {
     "asset": 1582170804007,
-    "meta": 1582170804066,
+    "meta": 1582182437300,
     "relativePath": "Texture/爆炸_000.png"
   },
   "f96c31df-2c5d-4426-9c35-e7cbbfe79ba7": {
     "asset": 1582170804007,
-    "meta": 1582170804069,
+    "meta": 1582182520458,
     "relativePath": "Texture/爆炸_008.png"
   },
   "0bf012f5-60fd-4ebe-850c-1b1b7e081e3b": {
     "asset": 1582170804007,
-    "meta": 1582170804086,
+    "meta": 1582182445036,
     "relativePath": "Texture/爆炸_001.png"
   },
   "0c6fee01-5957-4ab1-a73e-1d52443da24b": {
     "asset": 1582170804008,
-    "meta": 1582170804094,
+    "meta": 1582182496556,
     "relativePath": "Texture/爆炸_005.png"
   },
   "1ac44d0b-de75-49ea-b383-cb698643b310": {
     "asset": 1582170804009,
-    "meta": 1582170804106,
+    "meta": 1582182481332,
     "relativePath": "Texture/爆炸_003.png"
   },
   "e962b656-bf51-4eca-8284-cd9ed6899c8e": {
     "asset": 1582170804010,
-    "meta": 1582170804117,
+    "meta": 1582182453770,
     "relativePath": "Texture/爆炸_002.png"
   },
   "bb4d06d2-f140-4e80-8379-796ed7b701bd": {
     "asset": 1582170804010,
-    "meta": 1582170804128,
+    "meta": 1582182489429,
     "relativePath": "Texture/爆炸_004.png"
   },
   "dd038d4b-6fe8-4357-8290-2e47e5a1a8f0": {
@@ -336,7 +336,7 @@
   },
   "0e9e84bb-130a-46b5-9aa0-9fec81700711": {
     "asset": 1582175718548,
-    "meta": 1582175718590,
+    "meta": 1582182420436,
     "relativePath": "Texture/背景.jpg"
   },
   "616ca4c9-636b-4002-ad87-2d02daac6388": {
