@@ -58,6 +58,9 @@ var Enemy = /** @class */ (function (_super) {
         if (this.isDeid) {
             return;
         }
+        if (other.node.group != '子弹') {
+            return;
+        }
         if (self.node.position.y > this.node.parent.height / 2) {
             return;
         }

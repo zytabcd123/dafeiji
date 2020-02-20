@@ -1,5 +1,5 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/Game.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
-cc._RF.push(module, 'ea0edbAvC1GsbfBcECje+B0', 'Game', __filename);
+cc._RF.push(module, 'dd0381Lb+hDV4KQLkfloajw', 'Game', __filename);
 // Script/Game.ts
 
 "use strict";
@@ -34,6 +34,13 @@ var BulletGroup_1 = require("./BulletGroup");
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+var GameState;
+(function (GameState) {
+    GameState[GameState["non"] = 0] = "non";
+    GameState[GameState["start"] = 1] = "start";
+    GameState[GameState["pause"] = 2] = "pause";
+    GameState[GameState["over"] = 3] = "over"; //结束
+})(GameState || (GameState = {}));
 var Game = /** @class */ (function (_super) {
     __extends(Game, _super);
     function Game() {
@@ -41,34 +48,78 @@ var Game = /** @class */ (function (_super) {
         _this.bubbleGroup = null;
         _this.scoreLabel = null;
         _this.bubbleRate = 1; //子弹发射频率，默认间隔1秒发射
+        _this.state = GameState.start;
         _this.totalEnemy = 0;
         _this.scoreNum = 0;
+        _this.bubbleTimeBlock = function () {
+            this.bubbleGroup.createBullet();
+        };
         return _this;
     }
     // LIFE-CYCLE CALLBACKS:
     Game.prototype.onLoad = function () {
-        var timeCallback = function () {
-            this.autoBullet();
-        };
-        this.schedule(timeCallback, this.bubbleRate);
+        this.timer();
     };
-    Game.prototype.start = function () {
+    Game.prototype.timer = function () {
+        this.schedule(this.bubbleTimeBlock, this.bubbleRate);
     };
-    Game.prototype.update = function (dt) {
-        // cc.log('########',dt)
+    Game.prototype.untimer = function () {
+        this.unschedule(this.bubbleTimeBlock);
     };
     Game.prototype.updateScore = function () {
         this.scoreNum += 1;
         this.scoreLabel.string = this.scoreNum.toString();
     };
-    Game.prototype.autoBullet = function () {
-        // cc.log('自动发射子弹', this.bubbleGroup.isValid)
-        this.bubbleGroup.createBullet();
-    };
     Game.prototype.switchBulletAction = function (event, cusEvn) {
         this.bubbleGroup.bulletType = cusEvn;
         cc.log('~~~~~~~~~~~~~~~~~~');
         cc.log(cusEvn);
+    };
+    Game.prototype.pregameOver = function () {
+        this.state = GameState.over;
+        this.untimer();
+        this.saveScore();
+    };
+    Game.prototype.gameOver = function () {
+        cc.log('~~~~~~~~~~~~~~~~~~游戏结束');
+        cc.director.loadScene('endScene');
+    };
+    Game.prototype.saveScore = function () {
+        var sk = 'score_0';
+        var idx = 0;
+        var cds = cc.sys.localStorage.getItem('currentScore');
+        if (cds != null) {
+            var cd = JSON.parse(cds);
+            idx = cd.idx + 1;
+            sk = 'score_' + idx;
+            cc.log(cd == null, cd.idx);
+        }
+        var sd = {
+            'idx': idx,
+            'score': this.scoreNum,
+            'ctime': this.format(new Date(), 'yyyy-MM-dd hh:mm:ss')
+        };
+        var ss = JSON.stringify(sd);
+        cc.sys.localStorage.setItem('currentScore', ss);
+        cc.sys.localStorage.setItem(sk, ss);
+        cc.log(sk, sd.idx, sd.score, sd.ctime);
+    };
+    Game.prototype.format = function (time, fmt) {
+        var o = {
+            "M+": time.getMonth() + 1,
+            "d+": time.getDate(),
+            "h+": time.getHours(),
+            "m+": time.getMinutes(),
+            "s+": time.getSeconds(),
+            "q+": Math.floor((time.getMonth() + 3) / 3),
+            "S": time.getMilliseconds() //毫秒 
+        };
+        if (/(y+)/.test(fmt))
+            fmt = fmt.replace(RegExp.$1, (time.getFullYear() + "").substr(4 - RegExp.$1.length));
+        for (var k in o)
+            if (new RegExp("(" + k + ")").test(fmt))
+                fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+        return fmt;
     };
     __decorate([
         property(BulletGroup_1.default)

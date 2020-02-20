@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "切换子弹按钮3",
+    "texture": "306b195b-a83b-45e7-b5e3-a88af59ab373",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      253,
+      102
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      253,
+      102
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

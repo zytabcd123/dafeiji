@@ -2,8 +2,8 @@
   "__type__": "cc.AnimationClip",
   "_name": "hero_blowup_ani",
   "_objFlags": 0,
-  "_rawFiles": null,
-  "_duration": 0.5166666666666667,
+  "_native": "",
+  "_duration": 1.85,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -14,30 +14,82 @@
           {
             "frame": 0,
             "value": {
-              "__uuid__": "d6d68609-87fe-4443-b10e-dc10feae833a"
+              "__uuid__": "59097357-9518-4df3-b839-b614d8fc830d"
             }
           },
           {
             "frame": 0.16666666666666666,
             "value": {
-              "__uuid__": "bb54bdef-6d73-4ec6-bc16-9152c6a7ac41"
+              "__uuid__": "59f6d891-cf62-41ed-aeaa-aec3a9536be9"
             }
           },
           {
-            "frame": 0.3333333333333333,
+            "frame": 0.4166666666666667,
             "value": {
-              "__uuid__": "413ff423-50cf-4348-9a28-fe4ee6c1ad37"
+              "__uuid__": "f4451afd-67f8-494b-b352-9682695d7337"
             }
           },
           {
-            "frame": 0.5,
+            "frame": 0.6666666666666666,
             "value": {
-              "__uuid__": "776dbf77-9943-43a7-bcc5-4855e177eca2"
+              "__uuid__": "0e09f4d7-5eb1-4eaa-91a0-0e5de190975d"
+            }
+          },
+          {
+            "frame": 0.8333333333333334,
+            "value": {
+              "__uuid__": "f3def7c9-663d-4602-a2a1-3f952c5e168f"
+            }
+          },
+          {
+            "frame": 1,
+            "value": {
+              "__uuid__": "70769e6e-d4f4-40b2-a50d-ba27be478f07"
+            }
+          },
+          {
+            "frame": 1.1666666666666667,
+            "value": {
+              "__uuid__": "d4ab8250-d8e6-45fb-a436-d065975785d5"
+            }
+          },
+          {
+            "frame": 1.3333333333333333,
+            "value": {
+              "__uuid__": "4038a9b2-9d5f-4d8a-a939-61edc93c6e61"
+            }
+          },
+          {
+            "frame": 1.5,
+            "value": {
+              "__uuid__": "90a35baf-37ba-4607-8da0-ee0133254956"
+            }
+          },
+          {
+            "frame": 1.8333333333333333,
+            "value": {
+              "__uuid__": "917f9901-68a6-465a-b985-19f18c4ca77d"
             }
           }
         ]
       }
     }
   },
-  "events": []
+  "events": [
+    {
+      "frame": 1.2833333333333334,
+      "func": "",
+      "params": []
+    },
+    {
+      "frame": 1.2833333333333334,
+      "func": "",
+      "params": []
+    },
+    {
+      "frame": 1.2833333333333334,
+      "func": "",
+      "params": []
+    }
+  ]
 }

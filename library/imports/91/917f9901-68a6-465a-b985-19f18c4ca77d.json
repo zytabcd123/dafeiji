@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "爆炸_008",
+    "texture": "f96c31df-2c5d-4426-9c35-e7cbbfe79ba7",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      348,
+      292
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      348,
+      292
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

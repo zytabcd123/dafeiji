@@ -3,15 +3,6 @@ cc._RF.push(module, 'f9ccaT5Rq5Ewoowm9NAk5EZ', 'Hero', __filename);
 // Script/Hero.ts
 
 "use strict";
-// Learn TypeScript:
-//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/typescript.html
-// Learn Attribute:
-//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
-//  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -32,11 +23,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var Game_1 = require("./Game");
+// Learn TypeScript:
+//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/typescript.html
+// Learn Attribute:
+//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/reference/attributes.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/reference/attributes.html
+// Learn life-cycle callbacks:
+//  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
+//  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var Hero = /** @class */ (function (_super) {
     __extends(Hero, _super);
     function Hero() {
-        return _super !== null && _super.apply(this, arguments) || this;
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.diedAudio = null;
+        _this.gm = null;
+        _this.isDeid = false;
+        return _this;
     }
     // LIFE-CYCLE CALLBACKS:
     Hero.prototype.onLoad = function () {
@@ -79,6 +84,32 @@ var Hero = /** @class */ (function (_super) {
         // cc.log('飞机', location.x, location.y)
         this.node.setPosition(location);
     };
+    Hero.prototype.onCollisionEnter = function (other, self) {
+        if (this.isDeid) {
+            return;
+        }
+        this.isDeid = true;
+        this.heroDeidEffect();
+        this.gm.pregameOver();
+    };
+    Hero.prototype.heroDeidEffect = function () {
+        var a = this.getComponent(cc.Animation);
+        a.playAdditive('hero_blowup_ani');
+        a.on('finished', this.heroDeidEffectFinished, this);
+        cc.audioEngine.playEffect(this.diedAudio, false);
+    };
+    Hero.prototype.heroDeidEffectFinished = function () {
+        // this.node.removeFromParent()
+        // this.destroy()
+        this.gm.gameOver();
+        this.offDrag();
+    };
+    __decorate([
+        property(cc.AudioClip)
+    ], Hero.prototype, "diedAudio", void 0);
+    __decorate([
+        property(Game_1.default)
+    ], Hero.prototype, "gm", void 0);
     Hero = __decorate([
         ccclass
     ], Hero);

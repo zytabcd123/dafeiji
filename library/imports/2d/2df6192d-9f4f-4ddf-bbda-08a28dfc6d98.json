@@ -127,7 +127,6 @@
     "yMinSpeed": 100,
     "yMaxSpeed": 500,
     "HP": 100,
-    "gm": null,
     "diedAudio": {
       "__uuid__": "4ab8fec8-46ee-4967-be57-ac7e60a4ff4d"
     },
@@ -246,7 +245,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "2df6192d-9f4f-4ddf-bbda-08a28dfc6d98"
     },
     "fileId": "81hTNduSZEaa9RdhP/68nG",
     "sync": false

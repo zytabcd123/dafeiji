@@ -13,19 +13,23 @@ const {ccclass, property} = cc._decorator;
 @ccclass
 export default class NewClass extends cc.Component {
 
-    @property(cc.Label)
-    label: cc.Label = null;
+    @property(cc.Label) scoreLabel: cc.Label = null;
 
-    @property
-    text: string = 'hello';
+    onLoad() {
+        let cd = JSON.parse(cc.sys.localStorage.getItem('currentScore'))
 
-    // LIFE-CYCLE CALLBACKS:
-
-    // onLoad () {}
-
-    start () {
-
+        this.scoreLabel.string = cd.score
     }
 
-    // update (dt) {}
+    restartAction() {
+        cc.director.loadScene('gameScene');
+    }
+
+    historyAction() {
+        cc.director.loadScene('historyScene');
+    }
+
+    exitAction() {
+        cc.director.loadScene('startScene');
+    }
 }

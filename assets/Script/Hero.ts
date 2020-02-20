@@ -1,3 +1,5 @@
+import Game from "./Game";
+
 // Learn TypeScript:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/typescript.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/manual/en/scripting/typescript.html
@@ -13,6 +15,9 @@ const {ccclass, property} = cc._decorator;
 @ccclass
 export default class Hero extends cc.Component {
 
+    @property(cc.AudioClip) diedAudio: cc.Texture2D = null
+    @property(Game) gm: Game = null
+    isDeid: boolean = false
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
@@ -58,6 +63,29 @@ export default class Hero extends cc.Component {
         }
         // cc.log('飞机', location.x, location.y)
         this.node.setPosition(location);
+    }
+
+    onCollisionEnter (other: cc.Collider, self: cc.Collider) {
+        if (this.isDeid) {return}
+
+        this.isDeid = true
+        this.heroDeidEffect()
+        this.gm.pregameOver()
+    }
+
+    heroDeidEffect () {
+        var a = this.getComponent(cc.Animation)
+        a.playAdditive('hero_blowup_ani')
+        a.on('finished', this.heroDeidEffectFinished, this)
+
+        cc.audioEngine.playEffect(this.diedAudio, false)
+    }
+    
+    heroDeidEffectFinished() {
+        // this.node.removeFromParent()
+        // this.destroy()
+        this.gm.gameOver()
+        this.offDrag()
     }
 
 }
