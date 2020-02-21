@@ -2,6 +2,6 @@
   "appid": "wx40eb91cfeb4fb599",
   "orientation": "portrait",
   "separate_engine": false,
-  "REMOTE_SERVER_ROOT": "",
+  "REMOTE_SERVER_ROOT": "https://dafeiji.picroup.com:444/",
   "subContext": ""
 }

@@ -9,12 +9,7 @@
   "packable": true,
   "platformSettings": {
     "wechatgame": {
-      "formats": [
-        {
-          "name": "jpg",
-          "quality": 80
-        }
-      ]
+      "formats": []
     }
   },
   "subMetas": {

@@ -11,7 +11,7 @@
   "title": "dafeiji",
   "webOrientation": "portrait",
   "includeSDKBox": false,
-  "inlineSpriteFrames": true,
+  "inlineSpriteFrames": false,
   "inlineSpriteFrames_native": true,
   "mergeStartScene": false,
   "optimizeHotUpdate": false,
