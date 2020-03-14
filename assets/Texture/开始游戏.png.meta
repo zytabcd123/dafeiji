@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.3",
+  "ver": "2.3.4",
   "uuid": "465dd2ad-6fec-4c3d-a358-c91ca8537328",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -7,6 +7,8 @@
   "premultiplyAlpha": false,
   "genMipmaps": false,
   "packable": true,
+  "width": 400,
+  "height": 87,
   "platformSettings": {},
   "subMetas": {
     "开始游戏": {

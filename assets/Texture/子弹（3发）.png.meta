@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.3",
+  "ver": "2.3.4",
   "uuid": "78f360ad-e5d4-40ad-8239-92e6c6020a50",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -7,6 +7,8 @@
   "premultiplyAlpha": false,
   "genMipmaps": false,
   "packable": true,
+  "width": 111,
+  "height": 114,
   "platformSettings": {},
   "subMetas": {
     "子弹（3发）": {

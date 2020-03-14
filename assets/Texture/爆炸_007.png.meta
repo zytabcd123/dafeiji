@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.3",
+  "ver": "2.3.4",
   "uuid": "d910257b-ca4d-4bf8-8a24-763075af8972",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -7,6 +7,8 @@
   "premultiplyAlpha": false,
   "genMipmaps": false,
   "packable": true,
+  "width": 396,
+  "height": 298,
   "platformSettings": {
     "wechatgame": {
       "formats": []

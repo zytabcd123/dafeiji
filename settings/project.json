@@ -22,7 +22,11 @@
       false
     ]
   ],
-  "excluded-modules": [],
+  "excluded-modules": [
+    "3D Physics/cannon.js",
+    "3D Physics/Builtin",
+    "3D Particle"
+  ],
   "group-list": [
     "子弹",
     "主角",
@@ -41,7 +45,7 @@
     "height": 640,
     "width": 960
   },
-  "last-module-event-record-time": 1581929098304,
+  "last-module-event-record-time": 1584020139439,
   "assets-sort-type": "name",
   "facebook": {
     "appID": "",

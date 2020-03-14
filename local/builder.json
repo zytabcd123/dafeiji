@@ -15,5 +15,6 @@
   "keystoreAliasPassword": "",
   "apiLevel": "",
   "appABIs": [],
-  "vsVersion": "auto"
+  "vsVersion": "auto",
+  "buildScriptsOnly": false
 }

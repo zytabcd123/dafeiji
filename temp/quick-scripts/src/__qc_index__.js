@@ -1,0 +1,10 @@
+require('./assets/Script/Bullet');
+require('./assets/Script/End');
+require('./assets/Script/History');
+require('./assets/Script/Start');
+require('./assets/Script/ScoreCell');
+require('./assets/Script/BulletGroup');
+require('./assets/Script/EnemyGroup');
+require('./assets/Script/Game');
+require('./assets/Script/Enemy');
+require('./assets/Script/Hero');

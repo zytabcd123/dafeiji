@@ -156,7 +156,7 @@
       "subMetas": {}
     },
     "primitives.prefab": {
-      "ver": "1.2.5",
+      "ver": "1.2.6",
       "uuid": "ab2fdde9-10c2-44e4-bfe1-fcfcc1a86aa9",
       "optimizationPolicy": "AUTO",
       "asyncLoadAssets": false,
@@ -273,7 +273,7 @@
       "subMetas": {}
     },
     "DefaultMaterial.mtl": {
-      "ver": "1.0.2",
+      "ver": "1.0.3",
       "uuid": "a5849239-3ad3-41d1-8ab4-ae9fea11f97f",
       "dataAsSubAsset": null,
       "name": "DefaultMaterial.mtl",

@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.3",
+  "ver": "2.3.4",
   "uuid": "0c9040e9-d07c-4433-b99c-aa45a0cd414a",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -7,6 +7,8 @@
   "premultiplyAlpha": false,
   "genMipmaps": false,
   "packable": true,
+  "width": 400,
+  "height": 87,
   "platformSettings": {},
   "subMetas": {
     "历史得分(按钮)": {

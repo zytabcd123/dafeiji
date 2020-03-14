@@ -18,7 +18,7 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 301.953125,
+                "height": 302,
                 "type": "panel",
                 "width": 235
               },
@@ -27,7 +27,7 @@
                 "children": [
                   "assets"
                 ],
-                "height": 491.03125,
+                "height": 491,
                 "type": "panel",
                 "width": 235
               }
@@ -87,7 +87,8 @@
         "timeline"
       ]
     },
-    "worker": {}
+    "worker": {},
+    "window-1584020423266": {}
   },
   "panels": {
     "node-library": {

@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.3",
+  "ver": "2.3.4",
   "uuid": "29fa7797-39a1-411f-98cb-8763fabdc429",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -7,6 +7,8 @@
   "premultiplyAlpha": false,
   "genMipmaps": false,
   "packable": true,
+  "width": 1017,
+  "height": 518,
   "platformSettings": {},
   "subMetas": {
     "飞机大战": {

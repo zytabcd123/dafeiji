@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.3",
+  "ver": "2.3.4",
   "uuid": "616ca4c9-636b-4002-ad87-2d02daac6388",
   "type": "sprite",
   "wrapMode": "clamp",
@@ -7,6 +7,8 @@
   "premultiplyAlpha": false,
   "genMipmaps": false,
   "packable": true,
+  "width": 400,
+  "height": 270,
   "platformSettings": {},
   "subMetas": {
     "大飞机": {
